@@ -16,6 +16,10 @@ public class Department implements Serializable{
 		this.name = name;
 	}
 
+	public Department() {
+		
+	}
+	
 	public Integer getId() {
 		return id;
 	}
@@ -27,6 +31,14 @@ public class Department implements Serializable{
 	
 	public Map<Integer, Seller> getSellers() {
 		return sellers;
+	}
+	
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override
